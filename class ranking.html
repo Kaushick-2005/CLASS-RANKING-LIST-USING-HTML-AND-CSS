@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Ranking List</title>
+    <link rel="stylesheet" href="class ranking.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Ranking List</h1>
+        <form id="cgpaForm">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" required>
+            <label for="cgpa">CGPA:</label>
+            <input type="number" id="cgpa" step="0.01" required>
+            <button type="submit">Add Student</button>
+        </form>
+        <h2>Ranked List</h2>
+        <ul id="rankingList"></ul>
+    </div>
 
+    <script src="class ranking.js"></script>
+</body>
+</html>
